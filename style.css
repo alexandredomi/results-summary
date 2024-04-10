@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(241, 100%, 89%);;
+}
+.containerPai{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+}
+.resultado{
+    width: 50%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: hsla(256, 72%, 46%, 1);
+    background: linear-gradient(180deg, #7857FF 0%, #1125D4 100%);
+    border-radius: 20px;
+    color: white;
+    padding: 30px;
+    gap: 20px;
+}
+.resultados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: hsla(256, 72%, 46%, 1);
+    background: linear-gradient(180deg, #4811d4 0%, #1124d400 100%);
+}
+.resultados .numeroMaior{
+    font-size: 50px;
+    font-weight: 800;
+}
+.tituloResultado h2{
+    font-size: 20px;
+}
+.tituloResultado h2, .resultados .numeroEscuro, .great p{
+    color: hsl(0, 0%, 85%);
+}
+.great p{
+    padding: 5px 15px;
+}
+.great h3{
+    font-size: 25px;
+}
+
+.sumario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    max-width: 400px;
+    padding: 30px;
+    color: black;
+}
+.blocos{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    
+}
+.bloco1 h3, .bloco2 h3, .bloco3 h3, .bloco4 h3{
+    font-weight: 800;
+    font-size: 16px;
+}
+.bloco1 p, .bloco2 p, .bloco3 p, .bloco4 p{
+    font-weight: 800;
+}
+.bloco1 span, .bloco2 span, .bloco3 span, .bloco4 span{
+    font-weight: 400;
+}
+.bloco1, .bloco2, .bloco3, .bloco4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+.bloco1{
+    background-color: antiquewhite;
+}
+.bloco1 h3,.bloco1 img{
+    color: hsl(0, 100%, 67%);
+}
+.bloco2{
+    background-color: rgb(254, 248, 242);
+}
+.bloco2 h3,.bloco2 img{
+    color: hsl(39, 100%, 56%);
+}
+.bloco3{
+    background-color: rgb(252, 250, 248);
+}
+.bloco3 h3,.bloco3 img{
+    color: hsl(166, 100%, 37%);
+}
+.bloco4{
+    background-color: rgb(234, 241, 254);
+}
+.bloco4 h3,.bloco4 img{
+    color: hsl(234, 85%, 45%);
+}
+.botao button{
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border-radius: 23px;
+    border: none;
+    width: 100%;
+    height: 45px;
+}
+.juntos{
+    display: flex;
+    gap: 10px;
+}
+.botao button:hover{
+    background: hsla(256, 72%, 46%, 1);
+    background: linear-gradient(180deg, #7857FF 0%, #1125D4 100%);
+}
+
+@media screen and (max-width:570px){
+    .containerPai{
+        display: block;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .resultado{
+        width: 100%;
+        border-radius: 0px 0px 20px 20px;
+        max-width: none;
+    }
+    .sumario{
+        width: 100%;
+        gap: 20px;
+        max-width: none;
+    }
+}
